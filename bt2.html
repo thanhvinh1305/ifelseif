@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Kiểm tra năm nhuận</h2>
+<input type="number" id="year">
+<button type="button" onclick="getYear()">tra cứu</button>
+<p id="result"></p>
+<script>
+  function getYear() {
+    let year = +document.getElementById("year").value;
+    if (year % 4 === 0 && year % 100 !== 0) {
+      document.getElementById("result").innerHTML = year + " Năm nhuận ";
+    } else if ( year % 100 === 0  && year % 400 !== 0) {
+      document.getElementById("result").innerHTML = year +  " Không phải năm nhuận ";
+    } else if (year % 100 === 0 && year % 400 ===0 ) {
+      document.getElementById("result").innerHTML =  year + " Năm nhuận ";
+    } else {
+      document.getElementById("result").innerHTML =  year + " Không phải Năm nhuận ";
+    }
+  }
+</script>
+</body>
+</html>

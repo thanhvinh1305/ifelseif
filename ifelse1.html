@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let curDate = new Date();
+  // lay gio hien tai
+  let time = curDate.getHours();
+  if ( time < 10 ) {
+    greeting = "good morning";
+  } else if ( time < 20 ) {
+     greeting = "good day";
+  } else {
+    greeting = " good evening ";
+  }
+  console.log(greeting);
+</script>
+</body>
+</html>

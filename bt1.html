@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="n">
+<button type="button" onclick="totalMoney()">result</button>
+<p id="result"></p>
+<script>
+  function totalMoney() {
+    let n = document.getElementById("n").value;
+    if (n > 0) {
+      if (n >50) {
+        let money = n * 2000;
+        document.getElementById("result").innerHTML = money + "VND";
+      } else if (n <150) {
+        let money = n * 3000;
+        document.getElementById("result").innerHTML = money + "VND";
+      } else if (n<250) {
+        let money = n * 3500;
+        document.getElementById("result").innerHTML = money + "VND";
+      } else {
+        let money = n * 4000;
+        document.getElementById("result").innerHTML = money + "VND";
+      }
+
+    } else {
+      document.getElementById("result").innerHTML = "so luong dien tieu thu > 0"
+    }
+  }
+</script>
+</body>
+</html>
