@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Tên người dùng <input type="text" id="admin">
+<button type="button" onclick="loginName()">Enter</button> <br>
+Mật khẩu <input type="password" id="password">
+<button type="button" onclick="enterPassword()">Enter</button>
+<p id="demo"></p>
+<script>
+  function loginName() {
+    let admin = document.getElementById("admin").value;
+    if (admin === "Admin") {
+      document.getElementById("demo").innerHTML = "enter password";
+    } else if (admin === "null") {
+      document.getElementById("demo").innerHTML = "Canceled";
+    } else {
+      document.getElementById("demo").innerHTML = "I don't know you";
+    }
+  }
+  function enterPassword() {
+    let password = document.getElementById("password").value;
+    if (password === "TheMaster") {
+      document.getElementById("demo").innerHTML = "Welcome";
+    } else if (password === "null") {
+      document.getElementById("demo").innerHTML = "Canceled";
+    } else {
+      document.getElementById("demo").innerHTML = "Wrong password";
+    }
+  }
+</script>
+</body>
+</html>

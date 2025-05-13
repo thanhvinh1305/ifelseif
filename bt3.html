@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="demo">
+<button type="button" onclick="myFunction()">Click me</button>
+<p id="click"></p>
+<script>
+  function myFunction() {
+    let answer = document.getElementById("demo").value
+    if ( answer === "ECAMScript") {
+      document.getElementById("click").innerHTML = "Right";
+    } else {
+      document.getElementById("click").innerHTML = "Didn't know? ECMAScript!";
+    }
+  }
+</script>
+</body>
+</html>
